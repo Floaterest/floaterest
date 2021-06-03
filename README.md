@@ -1,2 +1,2 @@
-![Floateresting's github stats](https://github-readme-stats-anuraghazra1.vercel.app/api?username=floateresting&show_icons=true&hide_border=true&count_private=true&include_all_commits=true&bg_color=0D1117&title_color=39c5bb&text_color=eeeeee&icon_color=39c5bb)
-![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=floateresting&langs_count=10&hide_border=true&layout=compact&bg_color=0D1117&title_color=39c5bb&text_color=eeeeee)
+![Floaterest's github stats](https://github-readme-stats-anuraghazra1.vercel.app/api?username=floaterest&show_icons=true&hide_border=true&count_private=true&include_all_commits=true&bg_color=0D1117&title_color=39c5bb&text_color=eeeeee&icon_color=39c5bb)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=floaterest&langs_count=10&hide_border=true&layout=compact&bg_color=0D1117&title_color=39c5bb&text_color=eeeeee)
