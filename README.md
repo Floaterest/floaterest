@@ -1,5 +1,5 @@
 <p>
-<img src="http://github-readme-streak-stats.herokuapp.com/?user=floaterest&hide_border=true&background=222222&currstreaknum=ffffff&sidenums=f2f2f2&currstreaklabel=fce566&dates=b0acb5&sidelabels=fce566&stroke=ffffff&ring=39c5bb&fire=fc618d">
+<img src="http://github-readme-streak-stats.herokuapp.com/?user=floaterest&hide_border=true&background=222222&currStreakNum=ffffff&sideNums=f2f2f2&currStreakLabel=fce566&dates=b0acb5&sideLabels=fce566&stroke=ffffff&ring=39c5bb&fire=fc618d">
 </p>
 
 <p>
