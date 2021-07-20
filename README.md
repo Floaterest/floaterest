@@ -1,4 +1,4 @@
-# GitHub Stats
+# 📈 GitHub Stats
 > For more statistics, check here: https://profile-summary-for-github.com/user/floaterest
 
 ## Streak Stats
