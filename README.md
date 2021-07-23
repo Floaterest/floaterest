@@ -3,7 +3,7 @@
 
 <details open>
     <summary><b>Streak Stats</b></summary>
-    <img align="center" width="50%" src="http://github-readme-streak-stats.herokuapp.com?user=floaterest&hide_border=true&background=222222&currStreakNum=ffffff&sideNums=f2f2f2&currStreakLabel=fce566&dates=b0acb5&sideLabels=fce566&stroke=ffffff&ring=39c5bb&fire=fc618d">
+    <img align="center" width="50%" src="http://github-readme-streak-stats.herokuapp.com/?user=floaterest&hide_border=true&background=222222&currStreakNum=ffffff&sideNums=f2f2f2&currStreakLabel=fce566&dates=b0acb5&sideLabels=fce566&stroke=ffffff&ring=39c5bb&fire=fc618d">
 </details>
 
 <details open>
