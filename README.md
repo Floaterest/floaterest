@@ -1,27 +1,33 @@
-# 📈 GitHub Stats
-> For more statistics, check here: https://profile-summary-for-github.com/user/floaterest
-
+# GitHub Metrics <img height="69" align="right" src="https://count.getloli.com/get/@:floaterest?theme=moebooru">
 <details open>
-    <summary><b>Streak Stats</b></summary>
-    <img align="center" width="50%" src="http://github-readme-streak-stats.herokuapp.com/?user=floaterest&hide_border=true&background=222222&currStreakNum=ffffff&sideNums=f2f2f2&currStreakLabel=fce566&dates=b0acb5&sideLabels=fce566&stroke=ffffff&ring=39c5bb&fire=fc618d">
+	<summary><b>Overview</b></summary>
+	<!-- base is 480x216 and calender is 480x333 -->
+	<!-- to make equal height, base becomes 740x333 -->
+	<!-- thus, total width is 740 + 480 = 1220 -->
+	<!-- and base takes 740 / 1220 = 60.66% -->
+	<!-- then take out 0.5% for a gap -->
+	<img width="60.16%" src="./metrics/base.svg">
+	<img width="38.94%" src="./metrics/calender.svg">
 </details>
 
 <details open>
-    <summary><b>Profile Stats</b></summary>
+	<!-- lang: 480x280 => 559x326 -->
+	<!-- act: 480x326 -->
+	<summary><b>Languages & Activity</b></summary>
+	<img width="53.30%" src="./metrics/languages.svg">
+	<img width="45.70%" src="./metrics/activity.svg">
+	<blockquote>Most Used Languages does not reflect coding experience or skill level</blockquote>
+</details>
 
-> Most Used Languages does not reflect coding experience or skill level
 
-<div align="center">
-    <!-- stats is 495x195, top-langs is 350x190 -->
-    <!-- to make it equal height and perserve ratio, top-langs becomes 359x195 -->
-    <!-- therefore stats will take 495/(495+359) = 58% of width-->
-    <!-- finally, make it 57.85% because of gaps-->
-    <img width="57.85%" src="https://github-readme-stats.vercel.app/api?username=floaterest&hide_border=true&bg_color=222222&title_color=39c5bb&text_color=f2f2f2&icon_color=fce566&show_icons=true&count_private=true&include_all_commits=true"><!--
-    --><img width="42%" src="https://github-readme-stats.vercel.app/api/top-langs?username=floaterest&hide_border=true&bg_color=222222&title_color=39c5bb&text_color=f2f2f2&langs_count=10&layout=compact">
-</div>
+<details open>
+	<summary><b>Achievements</b></summary>
+	<img width="49.50%" src="./metrics/achievements.svg">
 </details>
 
 <details open>
     <summary><b>Contribution Graph</b></summary>
     <img width="100%" src="https://activity-graph.herokuapp.com/graph?username=floaterest&hide_border=true&bg_color=222222&color=39c5bb&line=fce566&point=f2f2f2&area=true&area_color=fce566">
 </details>
+
+> For more statistics, see [profile-summary-for-github.com](https://profile-summary-for-github.com/user/floaterest)
