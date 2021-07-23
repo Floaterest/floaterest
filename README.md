@@ -1,4 +1,4 @@
-# GitHub Metrics <img height="69" align="right" src="https://count.getloli.com/get/@:floaterest?theme=moebooru">
+# GitHub Metrics <img height="60" align="right" src="https://count.getloli.com/get/@:floaterest?theme=moebooru">
 <details open>
 	<summary><b>Overview</b></summary>
 	<!-- base is 480x216 and calender is 480x333 -->
