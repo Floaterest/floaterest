@@ -1,6 +1,12 @@
 # About
-I convert tea into code.
-
+- I convert tea into code
+- I use these languages<br>
+    <a href="https://github.com/floaterest?tab=repositories&language=svelte"><img height="32" src="https://svelte.dev/favicon.png"></a>
+    <a href="https://github.com/floaterest?tab=repositories&language=python"><img height="32" src="./devicons/py.svg"></a>
+    <a href="https://github.com/floaterest?tab=repositories&language=typescript"><img height="32" src="./devicons/ts.svg"></a>
+    <a href="https://github.com/floaterest?tab=repositories&language=c%23"><img height="32" src="./devicons/cs.svg"></a>
+  - Click on the icon to show repositories filtered by language
+  - Icons are ordered randomly
 
 # GitHub Metrics <img height="50" align="right" src="https://count.getloli.com/get/@:floaterest">
 > Most of them are updated once a day
