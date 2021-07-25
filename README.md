@@ -6,7 +6,7 @@
     <a href="https://github.com/floaterest?tab=repositories&language=typescript"><img height="32" src="./devicons/ts.svg"></a>
     <a href="https://github.com/floaterest?tab=repositories&language=c%23"><img height="32" src="./devicons/cs.svg"></a>
   - Click on the icon to show repositories filtered by language
-  - Icons are ordered randomly
+  - Icons are not in any particular order
 
 # GitHub Metrics <img height="50" align="right" src="https://floaterest-counter.vercel.app/api/floaterest">
 > Most of them are updated once a day
