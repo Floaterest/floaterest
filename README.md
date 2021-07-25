@@ -8,7 +8,7 @@
   - Click on the icon to show repositories filtered by language
   - Icons are ordered randomly
 
-# GitHub Metrics <img height="50" align="right" src="https://count.getloli.com/get/@:floaterest">
+# GitHub Metrics <img height="50" align="right" src="https://floaterest-counter.vercel.app/api/floaterest">
 > Most of them are updated once a day
 
 <!--
@@ -50,7 +50,7 @@ tl;dr
 
 <details open>
     <summary><b>Contribution Graph</b></summary>
-    <img align="top" width="100%" src="https://activity-graph.herokuapp.com/graph?username=floaterest&hide_border=true&bg_color=222222&color=39c5bb&line=fce566&point=f2f2f2&area=true&area_color=fce566">
+    <img align="top" width="100%" alt="Contribution Graph" src="https://activity-graph.herokuapp.com/graph?username=floaterest&hide_border=true&bg_color=222222&color=39c5bb&line=fce566&point=f2f2f2&area=true&area_color=fce566">
 </details>
 
 > For more statistics, see [profile-summary-for-github.com](https://profile-summary-for-github.com/user/floaterest)
