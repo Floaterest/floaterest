@@ -5,6 +5,7 @@
     <a href="https://github.com/floaterest?tab=repositories&language=python"><img height="32" src="./devicons/py.svg"></a>
     <a href="https://github.com/floaterest?tab=repositories&language=typescript"><img height="32" src="./devicons/ts.svg"></a>
     <a href="https://github.com/floaterest?tab=repositories&language=c%23"><img height="32" src="./devicons/cs.svg"></a>
+    <a href="https://github.com/floaterest?tab=repositories&language=c%2B%2B"><img height="32" src="./devicons/cpp.svg"></a>
   - Click on the icon to show repositories filtered by language
   - Icons are not in any particular order
 
