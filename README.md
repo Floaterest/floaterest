@@ -11,8 +11,8 @@
   - Icons are not in any particular order
 
 # GitHub Metrics 
-<!--<img height="50" align="right" src="https://floaterest-counter.vercel.app/api/user/floaterest">-->
-> Most of them are updated once a day
+<img height="50" align="right" src="https://floaterest-counter.vercel.app/api/user/floaterest">
+> Most of them are updated once a week.
 
 <!--
 base is 480x223 and calender is 480x342
