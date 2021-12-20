@@ -1,4 +1,7 @@
 # About
+
+![](./snk/snek.svg)
+
 - I convert tea into code
 - I use these languages<br>
     <a href="https://github.com/floaterest?tab=repositories&language=svelte"><img height="32" src="https://svelte.dev/favicon.png"></a>

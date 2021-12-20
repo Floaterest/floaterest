@@ -1,0 +1,27 @@
+name: Generate Snek
+
+on:
+  push:
+    branches: [ master ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: platane/snk@master
+        id: snake-gif
+        with:
+          github_user_name: floaterest
+          gif_out_path: snk/snek.gif
+          svg_out_path: snk/snek.svg
+
+      - name: Push changes
+        run: |
+          git config --global user.email "support+actions@github.com"
+          git config --global user.name "GitHub Actions"
+
+          git add .
+          git commit -m "Update Snek"
+          git push
