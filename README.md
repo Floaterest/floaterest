@@ -54,9 +54,4 @@ tl;dr
 	<img align="top" width="50%" src="./metrics/achievements.svg">
 </details>
 
-<details open>
-    <summary><b>Contribution Graph</b></summary>
-    <img align="top" width="100%" alt="Contribution Graph" src="https://activity-graph.herokuapp.com/graph?username=floaterest&hide_border=true&bg_color=222222&color=39c5bb&line=fce566&point=f2f2f2&area=true&area_color=fce566">
-</details>
-
 > For more statistics, see [profile-summary-for-github.com](https://profile-summary-for-github.com/user/floaterest)
