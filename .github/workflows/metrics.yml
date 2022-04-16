@@ -2,39 +2,47 @@ name: Metrics
 on:
   schedule: [{cron: "0 4 * * 0"}]
   workflow_dispatch:
+  push:
+    branches:
+      - master
 jobs:
   base:
     runs-on: ubuntu-latest
     steps:
-      - uses: lowlighter/metrics@master
+      - uses: lowlighter/metrics@latest
         with:
           filename: metrics/base.svg
-          base: header, activity
+          base: header, activity, metadata
           token: ${{ secrets.METRICS_TOKEN }}
           committer_message: (/≧▽≦)/ Update ${filename}
           commits_authoring: Floaterest
+          extras_js: document.querySelectorAll('footer')?.forEach(f => f.remove())
 
           extras_css: |
             h1,h2,h3{
               color: #39c5bb;
             }
-            foreignObject > div{
-              border-radius: 1rem;
-              background-color: #222222;
-              display: grid;
+            foreignObject > .items-wrapper{
+              border-radius: 1em;
+              border: 1px solid #5e5e5e;
+              background-color: #0f0f0f;
+              padding-bottom: 1em;
             }
             foreignObject > div > section{
-              color: #f2f2f2;
+              color: #f1f1f1;
             }
   calendar:
     runs-on: ubuntu-latest
     steps:
-      - uses: lowlighter/metrics@master
+      - uses: actions/checkout@v2
         with:
-          filename: metrics/calender.svg
+          fetch-depth: 0
+      - uses: lowlighter/metrics@latest
+        with:
+          filename: metrics/calendar.svg
           base: false
+          output_action: none
           token: ${{ secrets.METRICS_TOKEN }}
-          committer_message: (/≧▽≦)/ Update ${filename}
           commits_authoring: Floaterest
 
           plugin_isocalendar: true
@@ -44,94 +52,24 @@ jobs:
             h1,h2,h3{
               color: #39c5bb;
             }
-            foreignObject > div{
-              border-radius: 1rem;
-              background-color: #222222;
-              display: grid;
+            foreignObject > .items-wrapper{
+              border-radius: 1em;
+              border: 1px solid #5e5e5e;
+              background-color: #0f0f0f;
+              padding-bottom: 1em;
             }
             foreignObject > div > section{
-              color: #f2f2f2;
+              color: #f1f1f1;
             }
-  languages:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: lowlighter/metrics@master
-        with:
-          filename: metrics/languages.svg
-          base: false
-          token: ${{ secrets.METRICS_TOKEN }}
-          committer_message: (/≧▽≦)/ Update ${filename}
-          commits_authoring: Floaterest
+      - name: Update calendar
+        run: python3 update.py metrics/calendar.svg
 
-          plugin_languages: true
-          plugin_languages_details: bytes-size, percentage
-          plugin_languages_sections: most-used, recently-used
-          plugin_languages_recent_days: 7
-          plugin_languages_limit: 10
+      - name: Push
+        run: |
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git pull
+          git add .
+          git commit -m "(/≧▽≦)/ Update metrics/calendar.svg"
+          git push -f
 
-          extras_css: |
-            h1,h2,h3{
-              color: #39c5bb;
-            }
-            foreignObject > div{
-              border-radius: 1rem;
-              background-color: #222222;
-              display: grid;
-            }
-            foreignObject > div > section{
-              color: #f2f2f2;
-            }
-  activity:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: lowlighter/metrics@master
-        with:
-          filename: metrics/activity.svg
-          base: false
-          token: ${{ secrets.METRICS_TOKEN }}
-          committer_message: (/≧▽≦)/ Update ${filename}
-          commits_authoring: Floaterest
-
-          plugin_activity: true
-          plugin_activity_days: 7
-          plugin_activity_load: 100
-
-          extras_css: |
-            h1,h2,h3{
-              color: #39c5bb;
-            }
-            foreignObject > div{
-              border-radius: 1rem;
-              background-color: #222222;
-              display: grid;
-            }
-            foreignObject > div > section{
-              color: #f2f2f2;
-            }
-  achievements:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: lowlighter/metrics@master
-        with:
-          filename: metrics/achievements.svg
-          base: false
-          token: ${{ secrets.METRICS_TOKEN }}
-          committer_message: (/≧▽≦)/ Update ${filename}
-          commits_authoring: Floaterest
-
-          plugin_achievements: true
-          plugin_achievements_threshold: B
-          plugin_achievements_secrets: true
-
-          extras_css: |
-            h1,h2,h3{
-              color: #39c5bb;
-            }
-            foreignObject > div{
-              border-radius: 1rem;
-              background-color: #222222;
-              display: grid;
-            }
-            foreignObject > div > section{
-              color: #f2f2f2;
-            }
