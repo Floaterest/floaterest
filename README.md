@@ -10,7 +10,7 @@
     <a href="https://github.com/floaterest?tab=repositories&language=rust"><img height="32" src="./devicons/rs.svg"></a>
   - Click on the icon to show repositories filtered by language
 
-<h1>GitHub Metrics <img height="50" align="right" src="https://floaterest-counter.vercel.app/api/user/floaterest"></h1>
+<h1>GitHub Metrics <img height="50" align="right" src="https://floaterest.vercel.app/api/count/floaterest"></h1>
 
 > For more statistics, see [profile-summary-for-github.com](https://profile-summary-for-github.com/user/floaterest)
 
