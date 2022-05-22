@@ -1,14 +1,15 @@
 # About
 
 - I convert tea into code
-- I use these languages (not in order)<br>
-    <a href="https://github.com/floaterest?tab=repositories&language=svelte"><img height="32" src="https://svelte.dev/favicon.png"></a>
-    <a href="https://github.com/floaterest?tab=repositories&language=python"><img height="32" src="./devicons/py.svg"></a>
-    <a href="https://github.com/floaterest?tab=repositories&language=typescript"><img height="32" src="./devicons/ts.svg"></a>
-    <a href="https://github.com/floaterest?tab=repositories&language=c%23"><img height="32" src="./devicons/cs.svg"></a>
-    <a href="https://github.com/floaterest?tab=repositories&language=c%2B%2B"><img height="32" src="./devicons/cpp.svg"></a>
-    <a href="https://github.com/floaterest?tab=repositories&language=rust"><img height="32" src="./devicons/rs.svg"></a>
+- I use these languages <br>
+    <a title="Rust" href="https://github.com/floaterest?tab=repositories&language=rust"><img height="32" src="./devicons/rs.svg"></a>
+    <a title="Svelte" href="https://github.com/floaterest?tab=repositories&language=svelte"><img height="32" src="https://svelte.dev/favicon.png"></a>
+    <a title="TypeScript" href="https://github.com/floaterest?tab=repositories&language=typescript"><img height="32" src="./devicons/ts.svg"></a>
+    <a title="Python" href="https://github.com/floaterest?tab=repositories&language=python"><img height="32" src="./devicons/py.svg"></a>
+    <a title="C++" href="https://github.com/floaterest?tab=repositories&language=c%2B%2B"><img height="32" src="./devicons/cpp.svg"></a>
+    <a title="C#" href="https://github.com/floaterest?tab=repositories&language=c%23"><img height="32" src="./devicons/cs.svg"></a>
   - Click on the icon to show repositories filtered by language
+  - Hover on the icon to show language name
 
 <h1>GitHub Metrics <img height="50" align="right" src="https://floaterest.vercel.app/api/count/floaterest"></h1>
 
