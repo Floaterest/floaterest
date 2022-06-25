@@ -17,22 +17,17 @@
 
 <!--
 const f = (h1,h2,w2) => {
-	const w1 = h2 / h1 * w2;
-	const t = w1 + w2;
-	return {
-		width1: ((w1/t-0.005)*100).toFixed(2)+'%',
-		width2: ((w2/t-0.005)*100).toFixed(2)+'%',
-	}
+    const w1 = h2 / h1 * w2;
+    const t = w1 + w2;
+    return {
+        width1: ((w1/t-0.005)*100).toFixed(2)+'%',
+        width2: ((w2/t-0.005)*100).toFixed(2)+'%',
+    }
 }
-
-base is 480x240 and calendar is 480x337
-to make equal height, base width becomes 674
-therefore, base takes 674 / (674 + 480) = 58.41% of width
-then take out 0.5% (from both width) for a gap
 -->
 <span>
-<img align="top" width="57.9%" src="./metrics/base.svg">
-<img align="top" width="41.1%" src="./metrics/calendar.svg">
+<img align="top" width="56.5%" src="https://raw.githubusercontent.com/floaterest/metrics/master/metrics/base.svg">
+<img align="top" width="43.0%" src="https://raw.githubusercontent.com/floaterest/metrics/master/metrics/calendar.svg">
 </span>
 
 <span>
