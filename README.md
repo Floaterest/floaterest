@@ -2,7 +2,7 @@
 
 - I convert tea into code
 - I use these languages <br>
-    <a title="Rust" href="https://github.com/floaterest?tab=repositories&language=rust"><img height="32" src="https://doc.rust-lang.org/favicon1.61.0.svg"></a>
+    <a title="Rust" href="https://github.com/floaterest?tab=repositories&language=rust"><img height="32" src="https://doc.rust-lang.org/favicon1.62.0.svg"></a>
     <a title="Svelte" href="https://github.com/floaterest?tab=repositories&language=svelte"><img height="32" src="https://svelte.dev/favicon.png"></a>
     <a title="TypeScript" href="https://github.com/floaterest?tab=repositories&language=typescript"><img height="32" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"></a>
     <a title="Python" href="https://github.com/floaterest?tab=repositories&language=python"><img height="32" src="https://docs.python.org/3/_static/py.svg"></a>
