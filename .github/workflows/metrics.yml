@@ -1,0 +1,101 @@
+name: Compile Metrics
+
+on:
+  # first day of every month
+  # schedule: [{cron: "0 0 1 * *"}]
+  push: { branches-ignore: [ master ] }
+  workflow_dispatch:
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    permissions:
+      contents: write
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with: { fetch-depth: 0 }
+
+      - uses: lowlighter/metrics@latest
+        with:
+          filename: base.svg
+          base: header, activity, metadata
+          token: ${{ secrets.METRICS_TOKEN }}
+          # extras_js: document.querySelectorAll('footer')?.forEach(f => f.remove())
+          extras_css: |
+            foreignObject > .items-wrapper {
+                border-radius: 1em;
+                padding-bottom: 1em;
+                border: 1px solid #a7a7a7;
+                background-color: #ffffff;
+            }
+            h1,h2,h3{
+                font-weight: bold;
+                color: #3989c5;
+            }
+
+            @media (prefers-color-scheme: dark) {
+                foreignObject > div > section {
+                    color: #ffffff;
+                }
+                foreignObject > .items-wrapper {
+                    border: 1px solid #575757;
+                    background-color: #000000;
+                }
+                h1,h2,h3{
+                    color: #39c5bb;
+                }
+            }
+
+      - uses: lowlighter/metrics@latest
+        with:
+          filename: calendar.svg
+          base: false
+          output_action: none
+          token: ${{ secrets.METRICS_TOKEN }}
+          plugin_isocalendar: true
+          plugin_isocalendar_duration: full-year
+          extras_css: |
+            foreignObject > .items-wrapper {
+                border-radius: 1em;
+                padding-bottom: 1em;
+                border: 1px solid #a7a7a7;
+                background-color: #ffffff;
+            }
+            h1,h2,h3{
+                font-weight: bold;
+                color: #3989c5;
+            }
+
+            @media (prefers-color-scheme: dark) {
+                foreignObject > div > section {
+                    color: #ffffff;
+                }
+                foreignObject > .items-wrapper {
+                    border: 1px solid #575757;
+                    background-color: #000000;
+                }
+                h1,h2,h3{
+                    color: #39c5bb;
+                }
+            }
+
+      - run: tree /metrics_renders
+      - uses: actions/upload-pages-artifact@v1
+        with: { path: /metrics_renders }
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v1
