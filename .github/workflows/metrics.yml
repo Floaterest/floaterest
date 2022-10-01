@@ -6,6 +6,9 @@ on:
   push: { branches-ignore: [ master ] }
   workflow_dispatch:
 
+env:
+  preset: https://floaterest.github.io/floaterest/preset.yml
+
 concurrency:
   group: pages
   cancel-in-progress: true
@@ -19,26 +22,27 @@ jobs:
       - uses: actions/checkout@v2
         with: { fetch-depth: 0 }
 
-      # - uses: lowlighter/metrics@latest
-      #   with:
-      #     filename: base.svg
-      #     base: header, activity, metadata
-      #     token: ${{ secrets.METRICS_TOKEN }}
+      - uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          config_presets: ${{ env.preset }}
+          filename: base.svg
+          base: header, activity, metadata
 
-      # - uses: lowlighter/metrics@latest
-      #   with:
-      #     filename: calendar.svg
-      #     base: false
-      #     token: ${{ secrets.METRICS_TOKEN }}
-      #     plugin_isocalendar: true
-      #     plugin_isocalendar_duration: full-year
+      - uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          config_presets: ${{ env.preset }}
+          filename: calendar.svg
+          base: false
+          plugin_isocalendar: true
+          plugin_isocalendar_duration: full-year
 
-      # - run: tree /metrics_renders
-      # - uses: actions/upload-pages-artifact@v1
-      #   with: { path: /metrics_renders }
+      - run: cp preset.yml /metrics_renders
+      - run: tree /metrics_renders
 
       - uses: actions/upload-pages-artifact@v1
-        with: { path: . }
+        with: { path: /metrics_renders }
 
   deploy:
     needs: build
