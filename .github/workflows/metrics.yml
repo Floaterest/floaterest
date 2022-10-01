@@ -38,7 +38,7 @@ jobs:
           plugin_isocalendar: true
           plugin_isocalendar_duration: full-year
 
-      - run: cp preset.yml /metrics_renders
+      - run: sudo cp preset.yml /metrics_renders
       - run: tree /metrics_renders
 
       - uses: actions/upload-pages-artifact@v1
