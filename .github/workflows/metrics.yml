@@ -22,14 +22,16 @@ jobs:
       - uses: actions/checkout@v2
         with: { fetch-depth: 0 }
 
-      - uses: lowlighter/metrics@latest
+      - name: Base
+        uses: lowlighter/metrics@latest
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           config_presets: ${{ env.preset }}
           filename: base.svg
           base: header, activity, metadata
 
-      - uses: lowlighter/metrics@latest
+      - name: Calendar
+        uses: lowlighter/metrics@latest
         with:
           token: ${{ secrets.METRICS_TOKEN }}
           config_presets: ${{ env.preset }}
