@@ -29,7 +29,7 @@ jobs:
           config_presets: ${{ env.preset }}
           filename: base.svg
           base: header, activity, metadata
-          extras_js: document.querySelector('footer').innerText = new Date()
+          extras_js: document.querySelector('footer').innerText = 'Updated on ' + new Date().toISOString().replace(/(T|\.\d+Z)/g,' ')
 
       - name: Calendar
         uses: lowlighter/metrics@latest
