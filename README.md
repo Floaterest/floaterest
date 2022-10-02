@@ -24,8 +24,8 @@ const f = (h1,h2,w2) => {
 }
 -->
 <span>
-<img align="top" width="56.5%" src="https://floaterest.github.io/floaterest/base.svg">
-<img align="top" width="43.0%" src="https://floaterest.github.io/floaterest/calendar.svg">
+<img align="top" width="55.5%" src="https://floaterest.github.io/floaterest/base.svg">
+<img align="top" width="44.0%" src="https://floaterest.github.io/floaterest/calendar.svg">
 </span>
 
 <span>
