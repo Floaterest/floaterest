@@ -7,7 +7,30 @@ on:
   workflow_dispatch:
 
 env:
-  preset: https://floaterest.github.io/floaterest/preset.yml
+  css: |
+    foreignObject > .items-wrapper {
+        border-radius: 1em;
+        padding-bottom: 1em;
+        border: 1px solid #a7a7a7;
+        background-color: #ffffff;
+    }
+    h1,h2,h3{
+        font-weight: bold;
+        color: #3989c5;
+    }
+
+    @media (prefers-color-scheme: dark) {
+        foreignObject > div > section {
+            color: #ffffff;
+        }
+        foreignObject > .items-wrapper {
+            border: 1px solid #575757;
+            background-color: #000000;
+        }
+        h1,h2,h3{
+            color: #39c5bb;
+        }
+    }
 
 concurrency:
   group: pages
@@ -26,23 +49,22 @@ jobs:
         uses: lowlighter/metrics@latest
         with:
           token: ${{ secrets.METRICS_TOKEN }}
-          config_presets: ${{ env.preset }}
           filename: base.svg
           base: header, activity, metadata
           extras_js: document.querySelector('footer').innerText = 'Updated on ' + new Date().toISOString().replace(/(T|\.\d+Z)/g,' ')
+          extras_css: ${{ env.css }}
+          output_action: none
 
       - name: Calendar
         uses: lowlighter/metrics@latest
         with:
           token: ${{ secrets.METRICS_TOKEN }}
-          config_presets: ${{ env.preset }}
           filename: calendar.svg
           base: false
           plugin_isocalendar: true
           plugin_isocalendar_duration: full-year
-
-      - run: sudo cp preset.yml /metrics_renders
-      - run: tree /metrics_renders
+          extras_css: ${{ env.css }}
+          output_action: none
 
       - uses: actions/upload-pages-artifact@v1
         with: { path: /metrics_renders }
