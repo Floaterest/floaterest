@@ -8,28 +8,18 @@ on:
 
 env:
   css: |
-    foreignObject > .items-wrapper {
-        border-radius: 1em;
-        padding-bottom: 1em;
-        border: 1px solid #a7a7a7;
-        background-color: #ffffff;
+    @import https://fonts.googleapis.com/css2?family=Roboto&display=swap
+    svg {
+      color: black;
+      font-family: Roboto, sans-serif;
     }
-    h1,h2,h3{
+    h1, h2, h3 {
         font-weight: bold;
         color: #3989c5;
     }
-
     @media (prefers-color-scheme: dark) {
-        foreignObject > div > section {
-            color: #ffffff;
-        }
-        foreignObject > .items-wrapper {
-            border: 1px solid #575757;
-            background-color: #000000;
-        }
-        h1,h2,h3{
-            color: #39c5bb;
-        }
+        svg { color: white; }
+        h1, h2, h3 { color: #39c5bb; }
     }
 
 concurrency:
