@@ -35,7 +35,7 @@ jobs:
       - uses: actions/checkout@v2
         with: { fetch-depth: 0 }
 
-      - name: Base
+      - name: Build base
         uses: lowlighter/metrics@latest
         with:
           token: ${{ secrets.METRICS_TOKEN }}
@@ -63,7 +63,7 @@ jobs:
       - name: Update calender
         run: sudo perl -i -pe "s/(?<=Best streak )\d+/${{ steps.streak.outputs.streak }}/" /metrics_renders/calendar.svg
 
-      - name: Language
+      - name: Build language
         uses: lowlighter/metrics@latest
         with:
           token: ${{ secrets.METRICS_TOKEN }}
