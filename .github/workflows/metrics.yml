@@ -45,7 +45,7 @@ jobs:
           extras_css: ${{ env.css }}
           output_action: none
 
-      - name: Calendar
+      - name: Build calendar
         uses: lowlighter/metrics@latest
         with:
           token: ${{ secrets.METRICS_TOKEN }}
@@ -55,6 +55,13 @@ jobs:
           plugin_isocalendar_duration: full-year
           extras_css: ${{ env.css }}
           output_action: none
+
+      - name: Get streak
+        id: streak
+        run: echo "streak=$(python3 streak.py ${{ secrets.METRICS_TOKEN }})" >> $GITHUB_OUTPUT
+
+      - name: Update calender
+        run: sudo perl -i -pe "s/(?<=Best streak )\d+/${{ steps.streak.outputs.streak }}/" /metrics_renders/calendar.svg
 
       - name: Language
         uses: lowlighter/metrics@latest
