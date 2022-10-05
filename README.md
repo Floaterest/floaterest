@@ -30,5 +30,5 @@ const f = (h1,h2,w2) => {
 
 <span>
 <img width="41.5%" src="https://floaterest.github.io/floaterest/language.svg">
-<img width="57.5%" src="https://github-readme-streak-stats.herokuapp.com/?user=floaterest&background=0f0f0f&border=5e5e5e&stroke=f1f1f1&ring=39c5bb&fire=ff6680&currStreakNum=ffe666&currStreakLabel=39c5bb&sideNums=f1f1f1&sideLabels=39c5bb&dates=b8b8b8&date_format=Y-m-d">
+<img width="57.5%" src="https://floaterest.github.io/floaterest/leetcode.svg">
 </span>
