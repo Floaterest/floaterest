@@ -14,21 +14,18 @@
 > For more statistics, see [profile-summary-for-github.com](https://profile-summary-for-github.com/user/floaterest)
 
 <!--
-const f = (h1,h2,w2) => {
+const f = (h1, h2, w2) => {
     const w1 = h2 / h1 * w2;
     const t = w1 + w2;
-    return {
-        width1: ((w1/t-0.005)*100).toFixed(2)+'%',
-        width2: ((w2/t-0.005)*100).toFixed(2)+'%',
-    }
+    console.table({ w1: ((w1/t-0.005)*100).toFixed(2)+'%', w2: ((w2/t-0.005)*100).toFixed(2)+'%' })
 }
 -->
 <span>
-<img align="top" width="55.5%" src="https://floaterest.github.io/floaterest/base.svg">
-<img align="top" width="44.0%" src="https://floaterest.github.io/floaterest/calendar.svg">
+<img align="top" width="56.99%" src="https://floaterest.github.io/floaterest/base.svg">
+<img align="top" width="42.01%" src="https://floaterest.github.io/floaterest/calendar.svg">
 </span>
 
 <span>
-<img width="41.5%" src="https://floaterest.github.io/floaterest/language.svg">
-<img width="57.5%" src="https://floaterest.github.io/floaterest/leetcode.svg">
+<img width="59.11%" src="https://floaterest.github.io/floaterest/language.svg">
+<img width="39.89%" src="https://floaterest.github.io/floaterest/leetcode.svg">
 </span>
