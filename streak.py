@@ -58,7 +58,6 @@ def main(token: str) -> int:
 
 
 if __name__ == '__main__':
-    print(700)
-    # parser = argparse.ArgumentParser(description='Get longest streak')
-    # parser.add_argument('token', help='Personal Access Token from GitHub')
-    # print(main(parser.parse_args().token))
+    parser = argparse.ArgumentParser(description='Get longest streak')
+    parser.add_argument('token', help='Personal Access Token from GitHub')
+    print(main(parser.parse_args().token))
