@@ -76,6 +76,18 @@ jobs:
           extras_css: ${{ env.css }}
           output_action: none
 
+      - name: Build leetcode
+        uses: lowlighter/metrics@latest
+        with:
+          token: ${{ secrets.METRICS_TOKEN }}
+          filename: leetcode.svg
+          base: false
+          plugin_leetcode: true
+          plugin_leetcode_user: floaterest
+          plugin_leetcode_sections: solved, skills, recent
+          extras_css: ${{ env.css }}
+          output_action: none
+
       - uses: actions/upload-pages-artifact@v1
         with: { path: /metrics_renders }
 
