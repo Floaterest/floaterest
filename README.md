@@ -20,12 +20,8 @@ const f = (h1, h2, w2) => {
     console.table({ w1: ((w1/t-0.005)*100).toFixed(2)+'%', w2: ((w2/t-0.005)*100).toFixed(2)+'%' })
 }
 -->
-<span>
-<img align="top" width="56.99%" src="https://floaterest.github.io/floaterest/base.svg">
-<img align="top" width="42.01%" src="https://floaterest.github.io/floaterest/calendar.svg">
-</span>
+<img width="56.99%" src="https://floaterest.github.io/floaterest/base.svg"><!--
+--><img width="42.01%" src="https://floaterest.github.io/floaterest/calendar.svg">
 
-<span>
-<img width="59.11%" src="https://floaterest.github.io/floaterest/language.svg">
-<img width="39.89%" src="https://floaterest.github.io/floaterest/leetcode.svg">
-</span>
+<img width="59.11%" src="https://floaterest.github.io/floaterest/language.svg"><!--
+--><img width="39.89%" src="https://floaterest.github.io/floaterest/leetcode.svg">
