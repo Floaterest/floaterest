@@ -1,17 +1,15 @@
 <h1>About <img height="160" align="right" src="https://pentadecagon.vercel.app/api?duration=20"></h1>
 
-- I convert tea into code
-- I use these languages <br>
-    <a title="Rust" href="https://github.com/floaterest?tab=repositories&language=rust"><img height="32" src="./rust.svg"></a>
-    <a title="Svelte" href="https://github.com/floaterest?tab=repositories&language=svelte"><img height="32" src="https://svelte.dev/favicon.png"></a>
-    <a title="TypeScript" href="https://github.com/floaterest?tab=repositories&language=typescript"><img height="32" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"></a>
-    <a title="Python" href="https://github.com/floaterest?tab=repositories&language=python"><img height="32" src="https://docs.python.org/3/_static/py.svg"></a>
-    <a title="C++" href="https://github.com/floaterest?tab=repositories&language=c%2B%2B"><img height="32" src="https://isocpp.org/assets/images/cpp_logo.png"></a>
+<a title="Rust" href="https://github.com/floaterest?tab=repositories&language=rust"><img height="32" src="./rust.svg"></a>
+<a title="Svelte" href="https://github.com/floaterest?tab=repositories&language=svelte"><img height="32" src="https://svelte.dev/favicon.png"></a>
+<a title="TypeScript" href="https://github.com/floaterest?tab=repositories&language=typescript"><img height="32" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"></a>
+<a title="Python" href="https://github.com/floaterest?tab=repositories&language=python"><img height="32" src="https://docs.python.org/3/_static/py.svg"></a>
+<a title="C++" href="https://github.com/floaterest?tab=repositories&language=c%2B%2B"><img height="32" src="https://isocpp.org/assets/images/cpp_logo.png"></a>
     <a title="C#" href="https://github.com/floaterest?tab=repositories&language=c%23"><img height="32" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg"></a>
   - Click on the icon to show repositories filtered by language
   - Hover on the icon to show language name
 
-<h1>GitHub Metrics <img height="50" align="right" src="https://floaterest.vercel.app/api/count/floaterest"></h1>
+<h1>Metrics <img height="50" align="right" src="https://floaterest.vercel.app/api/count/floaterest"></h1>
 
 > For more statistics, see [profile-summary-for-github.com](https://profile-summary-for-github.com/user/floaterest)
 
