@@ -8,52 +8,47 @@ from datetime import datetime
 
 import requests
 
+QUERY = '''{
+    user(login: "%s"){
+        contributionsCollection(from: "%s"){
+            contributionCalendar {
+                weeks { contributionDays { date contributionCount } }
+            }
+        }
+    }
+}'''
+
 
 def http_post(query: str, fields: list, token: str) -> list:
-    kwargs = dict(
-        url='https://api.github.com/graphql',
-        headers={'Authorization': f'bearer {token}'},
-        data=json.dumps({'query': query})
-    )
-    with requests.post(**kwargs) as res:
+    headers = {'Authorization': f'bearer {token}'}
+    kwargs = dict(headers=headers, data=json.dumps({'query': query}))
+    with requests.post(url='https://api.github.com/graphql', **kwargs) as res:
         res.raise_for_status()
         return functools.reduce(lambda acc, cur: acc[cur], fields, res.json())
 
 
 def dates(post):
-    year = datetime.utcnow().year
+    """Get contributions year by year from most recent"""
+    year = datetime.utcnow().year + 1
     user = post('{ viewer { login } }', ['data', 'viewer', 'login'])
-    query = '''{
-        user(login: "%s"){
-            contributionsCollection(from: "%s"){
-                contributionCalendar {
-                    weeks { contributionDays { date contributionCount } }
-                }
-            }
-        }
-    }'''
-    while True:
-        weeks = post(query % (user, datetime(year, 1, 1).isoformat()), [
+    while year := year - 1:
+        weeks = post(QUERY % (user, datetime(year, 1, 1).isoformat()), [
             'data', 'user', 'contributionsCollection',
             'contributionCalendar', 'weeks'
         ])
-        contributions = [
-            (day['date'], day['contributionCount']) for day in
-            itertools.chain(*map(lambda s: s['contributionDays'], weeks))
-        ]
+        days = itertools.chain(*map(lambda s: s['contributionDays'], weeks))
+        contributions = [(d['date'], d['contributionCount']) for d in days]
         if any(count for _, count in contributions):
             yield contributions
         else:
             return
-        year -= 1
 
 
 def main(token: str) -> int:
     # ah yes, totally readable
+    post = functools.partial(http_post, token=token)
     return max(len(list(group)) for label, group in itertools.groupby(
-        bool(c) for _, c in sorted(list(itertools.chain(*dates(
-            functools.partial(http_post, token=token)
-        ))))
+        bool(c) for _, c in sorted(list(itertools.chain(*dates(post))))
     ) if label)
 
 
