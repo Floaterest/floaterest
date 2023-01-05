@@ -1,16 +1,13 @@
 <h1>About <img height="160" align="right" src="https://pentadecagon.vercel.app/api?duration=20"></h1>
 
-Languages/Technologies I use
+Languages/Technologies used:
 - Hover on icon to show name
 - Click on icon for example repository
 
-## Languages
 <a title="Rust" href="https://github.com/floaterest?tab=repositories&language=rust"><img height="32" src="./assets/rust.svg"></a>
 <a title="Svelte" href="https://github.com/floaterest?tab=repositories&language=svelte"><img height="32" src="./assets/svelte.png"></a>
 <a title="TypeScript" href="https://github.com/floaterest?tab=repositories&language=typescript"><img height="32" src="./assets/typescript.svg"></a>
 <a title="Python" href="https://github.com/floaterest?tab=repositories&language=python"><img height="32" src="./assets/python.svg"></a>
-
-## Technologies
 <a title="Neovim: my main IDE" href="https://github.com/floaterest/nvim"><img height="32" src="./assets/neovim.png"></a>
 <a title="Svelte Kit" href="https://github.com/floaterest/nore"><img height="32" src="./assets/kit.png"></a>
 <a title="Astro" href="https://github.com/floaterest/note"><img height="32" src="./assets/astro.svg"></a>
