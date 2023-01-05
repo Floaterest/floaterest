@@ -1,13 +1,24 @@
 <h1>About <img height="160" align="right" src="https://pentadecagon.vercel.app/api?duration=20"></h1>
 
-<a title="Rust" href="https://github.com/floaterest?tab=repositories&language=rust"><img height="32" src="./rust.svg"></a>
-<a title="Svelte" href="https://github.com/floaterest?tab=repositories&language=svelte"><img height="32" src="https://svelte.dev/favicon.png"></a>
-<a title="TypeScript" href="https://github.com/floaterest?tab=repositories&language=typescript"><img height="32" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg"></a>
-<a title="Python" href="https://github.com/floaterest?tab=repositories&language=python"><img height="32" src="https://docs.python.org/3/_static/py.svg"></a>
-<a title="C++" href="https://github.com/floaterest?tab=repositories&language=c%2B%2B"><img height="32" src="https://isocpp.org/assets/images/cpp_logo.png"></a>
-    <a title="C#" href="https://github.com/floaterest?tab=repositories&language=c%23"><img height="32" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg"></a>
-  - Click on the icon to show repositories filtered by language
-  - Hover on the icon to show language name
+Languages/Technologies I use
+- Hover on icon to show name
+- Click on icon for example repository
+
+## Languages
+<a title="Rust" href="https://github.com/floaterest?tab=repositories&language=rust"><img height="32" src="./assets/rust.svg"></a>
+<a title="Svelte" href="https://github.com/floaterest?tab=repositories&language=svelte"><img height="32" src="./assets/svelte.png"></a>
+<a title="TypeScript" href="https://github.com/floaterest?tab=repositories&language=typescript"><img height="32" src="./assets/typescript.svg"></a>
+<a title="Python" href="https://github.com/floaterest?tab=repositories&language=python"><img height="32" src="./assets/python.svg"></a>
+
+## Technologies
+<a title="Neovim: my main IDE" href="https://github.com/floaterest/nvim"><img height="32" src="./assets/neovim.png"></a>
+<a title="Svelte Kit" href="https://github.com/floaterest/nore"><img height="32" src="./assets/kit.png"></a>
+<a title="Astro" href="https://github.com/floaterest/note"><img height="32" src="./assets/astro.svg"></a>
+<a title="Deno" href="https://github.com/floaterest/nore"><img height="32" src="./assets/deno.svg"></a>
+<a title="Vercel" href="https://github.com/floaterest/pentadecagon"><img height="32" src="./assets/vercel.png"></a>
+
+
+
 
 <h1>Metrics <img height="50" align="right" src="https://floaterest.vercel.app/api/count/floaterest"></h1>
 
